@@ -6,6 +6,7 @@ const $messageFormInput = $messageForm.querySelector("input")
 const $messageFormButton = $messageForm.querySelector("button")
 const $sendLocationButton = $messageForm.querySelector("#loc")
 const $messages = document.querySelector("#messages")
+const $exitButton = document.querySelector("#exit")
 
 
 //Grabbing Templates
@@ -177,4 +178,9 @@ if(error){
 
 })
 
+$exitButton.addEventListener("click",()=>{
 
+
+     $exitButton.formTarget = "http://localhost:3000/"
+
+})
